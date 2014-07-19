@@ -623,21 +623,21 @@ CREATE TABLE IF NOT EXISTS `region` (
 --
 
 INSERT INTO `region` (`id`, `nombre`) VALUES
-(1, 'Tarapacá'),
-(2, 'Antofagasta'),
-(3, 'Atacama'),
-(4, 'Coquimbo'),
+(1, 'Región de Tarapacá'),
+(2, 'Región de Antofagasta'),
+(3, 'Región de Atacama'),
+(4, 'Región de Coquimbo'),
 (5, 'Valparaíso'),
-(6, 'Región del Libertador Gral. Bernardo O’Higgin'),
+(6, 'Región del Libertador Gral. Bernardo O’Higgins'),
 (7, 'Región del Maule'),
 (8, 'Región del Biobío'),
 (9, 'Región de la Araucanía'),
 (10, 'Región de Los Lagos'),
-(11, 'Región Aisén del Gral. Carlos Ibáñez del Camp'),
-(12, 'Región de Magallanes y de la Antártica Chilen'),
+(11, 'Región Aisén del Gral. Carlos Ibáñez del Campo'),
+(12, 'Región de Magallanes y de la Antártica Chilena'),
 (13, 'Región Metropolitana de Santiago'),
 (14, 'Región de Los Ríos'),
-(15, 'Arica y Parinacota');
+(15, 'Región de Arica y Parinacota');
 
 --
 -- Constraints for dumped tables
