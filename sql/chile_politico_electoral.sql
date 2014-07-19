@@ -614,7 +614,8 @@ INSERT INTO `provincia` (`id`, `id_region`, `nombre`) VALUES
 
 CREATE TABLE IF NOT EXISTS `region` (
   `id` int(11) NOT NULL COMMENT '	',
-  `nombre` varchar(45) NOT NULL,
+  `orden` int(2) NOT NULL,
+  `nombre` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -622,22 +623,22 @@ CREATE TABLE IF NOT EXISTS `region` (
 -- Dumping data for table `region`
 --
 
-INSERT INTO `region` (`id`, `nombre`) VALUES
-(1, 'Región de Tarapacá'),
-(2, 'Región de Antofagasta'),
-(3, 'Región de Atacama'),
-(4, 'Región de Coquimbo'),
-(5, 'Valparaíso'),
-(6, 'Región del Libertador Gral. Bernardo O’Higgins'),
-(7, 'Región del Maule'),
-(8, 'Región del Biobío'),
-(9, 'Región de la Araucanía'),
-(10, 'Región de Los Lagos'),
-(11, 'Región Aisén del Gral. Carlos Ibáñez del Campo'),
-(12, 'Región de Magallanes y de la Antártica Chilena'),
-(13, 'Región Metropolitana de Santiago'),
-(14, 'Región de Los Ríos'),
-(15, 'Región de Arica y Parinacota');
+INSERT INTO `region` (`id`,`orden`, `nombre`) VALUES
+(1,2, 'Región de Tarapacá'),
+(2,3, 'Región de Antofagasta'),
+(3,4, 'Región de Atacama'),
+(4,5, 'Región de Coquimbo'),
+(5,7, 'Región de Valparaíso'),
+(6,8, 'Región del Libertador Gral. Bernardo O’Higgins'),
+(7,9, 'Región del Maule'),
+(8,10, 'Región del Biobío'),
+(9,11, 'Región de la Araucanía'),
+(10,13, 'Región de Los Lagos'),
+(11,14, 'Región Aisén del Gral. Carlos Ibáñez del Campo'),
+(12,15, 'Región de Magallanes y de la Antártica Chilena'),
+(13,6, 'Región Metropolitana de Santiago'),
+(14,12, 'Región de Los Ríos'),
+(15,1, 'Región de Arica y Parinacota');
 
 --
 -- Constraints for dumped tables
